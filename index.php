@@ -304,7 +304,7 @@ preg_match_all('/(?:Water Temperature:<\/strong> )(\d*.\d*)(?:&#176;)([CF])(?: \
               <p>
               <?php 
               
-              echo "Showing current for <b>$year/$month/$day</b><br />Position: <b>"; 
+              echo "Showing current conditions for <b>$year/$month/$day</b><br />Position: <b>"; 
               
               if ($lat < 0){
               $lat1 = 0 - $lat;
@@ -501,7 +501,6 @@ $forecast['currently']['windDirection']=cardinal_direction($forecast['currently'
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Fishing Dashboard</h5>
                 <p class="grey-text text-lighten-4">Please feel free to send comments and suggestions to <i>fishingdashboard</i> at calcoasttech.com</p>
               </div>
             </div>
@@ -509,7 +508,7 @@ $forecast['currently']['windDirection']=cardinal_direction($forecast['currently'
           <div class="footer-copyright">
             <div class="container">
             © 2016 Copyright Bryan Karaffa
-            <a class="grey-text text-lighten-4 right" href="https://github.com/bryankaraffa">github</a>
+            <a class="grey-text text-lighten-4 right" href="https://github.com/bryankaraffa" target="_blank">github</a>
             </div>
           </div>
         </footer>
