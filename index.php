@@ -1,53 +1,3 @@
-<!-- Attempt #1 -->
-<link rel="stylesheet" href="//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-<script src="https://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
-<script src="./includes/heatmap-js/build/heatmap.js"> </script>
-<script>
-// don't forget to include leaflet-heatmap.js
-var testData = {
-  max: 8,
-  data: [{lat: 24.6408, lng:46.7728, count: 3},{lat: 50.75, lng:-1.55, count: 1}]
-};
-
-var baseLayer = L.tileLayer(
-  '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-    attribution: '...',
-    maxZoom: 18
-  }
-);
-
-var cfg = {
-  // radius should be small ONLY if scaleRadius is true (or small radius is intended)
-  // if scaleRadius is false it will be the constant radius used in pixels
-  "radius": 2,
-  "maxOpacity": .8, 
-  // scales the radius based on map zoom
-  "scaleRadius": true, 
-  // if set to false the heatmap uses the global maximum for colorization
-  // if activated: uses the data maximum within the current map boundaries 
-  //   (there will always be a red spot with useLocalExtremas true)
-  "useLocalExtrema": true,
-  // which field name in your data represents the latitude - default "lat"
-  latField: 'lat',
-  // which field name in your data represents the longitude - default "lng"
-  lngField: 'lng',
-  // which field name in your data represents the data value - default "value"
-  valueField: 'count'
-};
-
-
-var heatmapLayer = new HeatmapOverlay(cfg);
-
-var map = new L.Map('map-canvas', {
-  center: new L.LatLng(25.6586, -80.3568),
-  zoom: 4,
-  layers: [baseLayer, heatmapLayer]
-});
-
-heatmapLayer.setData(testData);
-</script>
- <div id="map-canvas"></div>
-
 <?php
 ///////////////////////////////////////////////////////////
 // Fishing Dashboard
@@ -498,17 +448,12 @@ $forecast['currently']['windDirection']=cardinal_direction($forecast['currently'
     </div>
     
     <footer class="page-footer blue darken-5">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <p class="grey-text text-lighten-4">Please feel free to send comments and suggestions to <i>fishingdashboard</i> at calcoasttech.com</p>
-              </div>
-            </div>
-          </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2016 Copyright Bryan Karaffa
-            <a class="grey-text text-lighten-4 right" href="https://github.com/bryankaraffa" target="_blank">github</a>
+            <a class="grey-text text-lighten-4">
+                Developed by <a class="grey-text text-lighten-4" href="https://github.com/bryankaraffa" target="_blank"> Bryan Karaffa</a>
+            </small>
+            <a class="grey-text text-lighten-4 right" href="https://github.com/bryankaraffa" target="_blank"><small><i>fishingdashboard</i> (at) <i>calcoasttech .com</small></a>
             </div>
           </div>
         </footer>
