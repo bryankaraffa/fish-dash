@@ -1,6 +1,6 @@
 [submodule "includes/php-solunar"]
 	path = includes/php-solunar
-	url = git@github.com:bryankaraffa/php-solunar.git
+	url = https://github.com/bryankaraffa/php-solunar.git
 [submodule "includes/heatmap-js"]
 	path = includes/heatmap-js
-	url = git@github.com:pa7/heatmap.js.git
+	url = https://github.com/pa7/heatmap.js.git
