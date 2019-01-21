@@ -233,13 +233,16 @@ preg_match_all('/(?:Water Temperature:<\/strong> )(\d*.\d*)(?:&#176;)([CF])(?: \
 	
 
 ?>
-<!-- Attempt #2 -->
-<!-- Compiled and minified CSS -->
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Attempt #2 -->
+  <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-
+  </head>
   <!-- Content -->
   <body>
   <div class="container">
@@ -458,3 +461,4 @@ $forecast['currently']['windDirection']=cardinal_direction($forecast['currently'
           </div>
         </footer>
 </body>
+</html>
