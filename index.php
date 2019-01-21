@@ -453,10 +453,10 @@ $forecast['currently']['windDirection']=cardinal_direction($forecast['currently'
     <footer class="page-footer blue darken-5">
           <div class="footer-copyright">
             <div class="container">
-            <a class="grey-text text-lighten-4">
-                Developed by <a class="grey-text text-lighten-4" href="https://github.com/bryankaraffa" target="_blank"> Bryan Karaffa</a>
+            <small class="grey-text text-lighten-4">
+                Developed by <a class="grey-text text-lighten-4" href="https://github.com/bryankaraffa" target="_blank">Bryan Karaffa</a>
             </small>
-            <a class="grey-text text-lighten-4 right" href="https://github.com/bryankaraffa" target="_blank"><small><i>fishingdashboard</i> (at) <i>calcoasttech .com</small></a>
+            <a class="grey-text text-lighten-4 right" href="https://github.com/bryankaraffa/fish-dash" target="_blank"><small><i>fishingdashboard</i> (at) <i>calcoasttech .com</small></a>
             </div>
           </div>
         </footer>
