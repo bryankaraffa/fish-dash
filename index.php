@@ -6,7 +6,10 @@
 
 ///////////////////////////////////////////////////////////
 // Include required libraries
-require_once './config.php';
+error_reporting(0);
+$config['api_key'] = $_ENV['forecastio-api-key'];
+date_default_timezone_set('America/Los_Angeles');
+
 require_once './includes/php-solunar/solunar.php';
 
 function get_string_between($string, $start, $end)
