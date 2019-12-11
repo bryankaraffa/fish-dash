@@ -7,7 +7,7 @@
 ///////////////////////////////////////////////////////////
 // Include required libraries
 error_reporting(0);
-$config['api_key'] = $_ENV['forecastio-api-key'];
+$config['api_key'] = $_ENV['FORECASTIO_API_KEY'];
 date_default_timezone_set('America/Los_Angeles');
 
 require_once './includes/php-solunar/solunar.php';
